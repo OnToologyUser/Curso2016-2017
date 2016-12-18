@@ -82,9 +82,13 @@ schema:streetAddress a owl:DatatypeProperty .
 
 schema:telephone a owl:DatatypeProperty .
 # 
-# http://www.madridcultural.es/ontology.owl#se_realiza_en
+# http://www.madridcultural.es/ontology.owl#esAccesible
 
-:se_realiza_en a owl:DatatypeProperty .
+:esAccesible a owl:DatatypeProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#horario
+
+:horario a owl:DatatypeProperty .
 # 
 # http://www.madridcultural.es/ontology.owl#tieneTransporte
 
@@ -108,6 +112,10 @@ rdfs:label a owl:DatatypeProperty ;
 # #################################################################
 # 
 # 
+# http://schema.org/AdministrativeArea
+
+schema:AdministrativeArea a owl:Class .
+# 
 # http://schema.org/Event
 
 schema:Event a owl:Class .
@@ -127,11 +135,8 @@ schema:PostalAdress a owl:Class .
 # 
 # http://www.madridcultural.es/ontology.owl#Distritos
 
-:Distritos a owl:Class .
-# 
-# http://www.madridcultural.es/ontology.owl#Tipo
-
-:Tipo a owl:Class .
+:Distritos a owl:Class ;
+	rdfs:subClassOf schema:AdministrativeArea .
 # 
 # http://www.madridcultural.es/ontology.owl#TiposCentros
 
