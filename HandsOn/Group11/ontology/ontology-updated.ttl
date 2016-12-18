@@ -45,6 +45,11 @@ schema:streetAddress a owl:ObjectProperty ;
 :tieneDistrito a owl:ObjectProperty ;
 	rdfs:subPropertyOf schema:address .
 # 
+# http://www.madridcultural.es/ontology.owl#tipoVia
+
+:tipoVia a owl:ObjectProperty ;
+	rdfs:subPropertyOf schema:address .
+# 
 # 
 # 
 # #################################################################
